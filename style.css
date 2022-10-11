@@ -1,0 +1,218 @@
+*{
+    padding: 0.3px;
+    margin: 00.3px;
+    margin-top: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    position: sticky;
+    margin-top: 9px;
+}
+
+.menu{
+    margin-top: -6px;
+}
+ul{
+    display: flex;
+    font-family: 'Trebuchet MS';
+    list-style-type: none;
+}
+
+li{
+    margin: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background-color: transparent;
+    padding: 2.4px 12px;
+    border-color: black;
+    margin-top: -15px;
+    transition: .45 ease;
+}
+
+.button a{
+    transition: .3 ease;
+    color: black;
+}
+
+.bun{
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+    transition: .45 ease;
+    height: 30px;
+
+}
+.bun a{
+    transition: .3 ease;
+    color: rgb(0, 0, 0);
+}
+
+.bun:hover{
+    background-color: rgb(87, 37, 87);
+    color: antiquewhite;
+    
+}
+
+.bun a:hover{
+    background-color: rgb(87, 37, 87);
+    color: antiquewhite;
+    
+}
+
+
+.btn{
+    border-color: antiquewhite;
+    color: antiquewhite;
+    box-shadow: none;
+    transition: .45 ease;
+    height: 30px;
+
+}
+.btn a{
+    transition: .3 ease;
+    color: white;
+}
+
+.btn:hover{
+    background-color: antiquewhite;
+    color: black;
+    
+}
+
+.btnn{
+    padding-top: 15px;
+    position: absolute;
+}
+
+
+/* intro */
+
+.intro{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(87, 37, 87);
+    padding-top: 75px;
+    padding-bottom: 120px;
+    padding-left: 60px;
+}
+
+.pat1{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 1170px;
+}
+
+.pat2{
+    position: absolute;
+    margin-top: 390px;
+}
+
+.pat3{
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -333px;
+}
+
+.cont{
+    padding: 75px;
+    color: antiquewhite;
+    margin-top: 45px;
+}
+
+.image{
+    margin-top: 45px;
+    margin-left: 180px;
+}
+
+.head{
+    font-size: xx-large;
+    color: antiquewhite;
+}
+
+.cont1{
+    padding-top: 15px;
+}
+
+.content{
+    padding-top: 120px;
+    padding-left: 60px;
+    margin-top: 210px;
+}
+
+.heading{
+    font-size: xx-large ;
+    color: rgb(87, 37, 87);
+    padding-left: 90px;
+}
+
+.cate{
+    display: flex;
+    color: rgb(87, 37, 87);
+    padding-top: 60px;
+    padding-left: 90px;
+    justify-content: space-between;
+}
+
+.cont2{
+    padding-top: 30px;
+}
+
+.top{
+    font-size: larger;
+}
+
+.note{
+    font-size: large;
+    padding-top: 18px;
+}
+
+.FM{
+    width: 1440px;
+    height: 252px;
+    background-color: rgb(87, 37, 87);
+    display: flex;
+    margin-left: 150px;
+    margin-top: 120px;
+}
+.how{
+    margin-left: 690px;
+    padding-top: 60px;
+}
+
+.foot{
+    margin-left: 150px;
+}
+
+.ent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.tit{
+    color: rgb(185, 184, 184);
+    margin-top: -45px;
+}
+
+.lin{
+    margin-top: 21px;
+}
+
+.icon2{
+    margin-top: 45px;
+}
