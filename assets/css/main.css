@@ -1,0 +1,799 @@
+/* CSS Document */
+@media (min-width:768px) {
+  html, body{margin:auto; background:white; height:100%; font-size:14px}
+
+  a{text-decoration:none; font-size:14px; font-family:Maiandra GD;}
+  .onbody{height:100%; width:100%; position:fixed; background:url(../img/fanbg.png) center repeat; background-size:cover; z-index:200; text-align:center;}
+  .onbody img{padding-top:20%;}
+  #maincont{position:relative; width:100%; min-height:100%; background:white; margin:0px auto; z-index:100;}
+  #admaincont{position:relative; width:100%; min-height:100%; background:#EBEBEB; z-index:100;}
+  #logoholder{width:100%; height:auto; overflow:visible; position:fixed; background:none; z-index:500;}
+  .nav2{width:auto; padding:0px 1.1% 0px 1.1%; height:36px; line-height:35px; float:right; color:#000; background:#000; text-align:center; margin:0px 1.5% 0px 0px;}
+  .nav2 a{color:#fff; font-size:15px; text-align:center; padding:0px 15px 0px 15px; font-family:Maiandra GD; font-weight:bold}
+  .nav2log{width:auto; padding:5px 1.1% 5px 1.1%; height:20px; line-height:20px; float:right; color:#000; background:red; text-align:center; margin:20px 1.5% 0px 0px;}
+  .nav2log a{color:#fff; font-size:16px; text-align:center; padding:5px 15px 5px 15px; font-family:Maiandra GD; font-weight:bold}
+
+  .navdown{width:auto; padding:0px 1.3% 0px 1.1%; height:37px; line-height:35px; float:right; background:#000 url(../img/arrowp.png) center right no-repeat; text-align:center; margin:0px 1.6% 0px 0px;}
+  .navdown a{color:#fff; font-size:15px; text-align:center; font-family:Maiandra GD;}
+  .navdown ul{display:none; list-style:none;}
+  .navdown:hover ul{display:block; top:20px; position:absolute; z-index:800; right:1.2%;}
+  .navdown ul li{background:#000; margin-bottom:1px; height:30px; line-height:30px; width:122px; text-align:right; padding-right:10px; margin-right:1px;}
+  .navdown ul li:hover{background:red; margin-bottom:1px; padding-left:0px; height:30px; line-height:30px; width:122px; text-align:right; padding-right:10px}
+  .navdown ul li a{color:#fff; font-size:15px; font-family:Maiandra GD;}
+  .navdown ul li:hover a{color:#fff; font-size:15px;}
+
+
+
+
+
+  #header{width:100%; height:auto; padding:10px 0px 15px 0px; overflow:hidden; background:black; position:fixed; z-index:200;}
+
+  #headerhom{width:100%; height:auto; padding:10px 0px 15px 0px; margin-top:30px; overflow:hidden; background:black; position:fixed; z-index:200;}
+  #headerrestr{width:100%; height:auto; padding:10px 0px 15px 0px; overflow:hidden; background:red; position:fixed; z-index:300; text-align:center; font-weight:bold; color:#fff; font-size:20px;}
+
+  #logo{width:10%; padding:0px 0px 0px 1.5%; height:50px; float:left; text-align:center; margin-top:10px; margin-bottom:10px;}
+  #logo img{color:#fff; font-size:20px; font-family:"Comic Sans MS", cursive; border:0px;}
+  #logohom{width:10%; padding:0px 0px 0px 1.5%; height:50px; float:left; text-align:center; margin-bottom:10px; margin-top:80px;}
+  #logohom img{color:#fff; font-size:20px; font-family:"Comic Sans MS", cursive; border:0px;}
+
+  #menuholder{width:73%; height:auto; overflow:auto; padding-bottom:15px; float:left; margin-left:1%;}
+  #menuholderhom{width:73%; height:auto; overflow:auto; padding-bottom:15px; float:left; margin-left:1%; margin-top:80px;}
+
+
+  .nav{width:auto; padding:5px 0.3% 5px 0.3%; height:30px; line-height:30px; float:left; padding-bottom:1px; margin-top:16px;}
+  .nav:hover a{border-bottom:1px solid blue;}
+  .nav a{color:#fff; font-size:16px; text-align:center; margin:5px 15px 5px 15px; font-family:Maiandra GD;}
+  .nav-act{width:auto; padding:5px 0.3% 5px 0.3%; height:30px; line-height:30px; border-left:1px solid #000; float:left; background:#040404; padding-bottom:1px; margin-top:16px;}
+  .nav-act a{color:#fff; font-size:16px; text-align:center; margin:5px 15px 5px 15px; font-family:Maiandra GD; border-bottom:1px solid blue;}
+  .navguest{width:auto; padding:5px 1.1% 5px 1.1%; height:20px; line-height:20px; float:right; color:#000; background:blue; text-align:center; margin:20px 1.5% 0px 0px;}
+  .navguest a{color:#fff; font-size:16px; text-align:center; padding:5px 15px 5px 15px; font-family:Maiandra GD; font-weight:bold;}
+  .navguesthom{width:auto; padding:5px 1.1% 5px 1.1%; height:20px; line-height:20px; float:right; color:#000; background:blue; text-align:center; margin:100px 1.5% 0px 0px;}
+  .navguesthom a{color:#fff; font-size:16px; text-align:center; padding:5px 15px 5px 15px; font-family:Maiandra GD; font-weight:bold;}
+
+
+  #menuholder2{width:73%; height:auto; overflow:auto; padding-bottom:5px; float:left; margin-left:1%; margin-top:7px;}
+  .navz{width:auto; padding:5px 1.1% 5px 1.1%; height:auto; float:left; padding-bottom:1px; height:30px; line-height:30px; margin-top:5px; margin-right:1.1%;}
+  .navz:hover a{border-bottom:1px solid blue;}
+  .navz a{color:#fff; font-size:9px; text-align:center; font-family:Maiandra GD;}
+  .navz-act{width:auto; padding:5px 1.1% 5px 1.1%; height:30px; line-height:30px; border-left:1px solid #000; float:left; background:#040404; padding-bottom:1px; margin-top:5px; margin-right:1.1%;}
+  .navz-act a{color:#fff; font-size:9px; text-align:center; font-family:Maiandra GD; border-bottom:1px solid blue;}
+  .navguestz{width:8%; padding:5px 1.1% 5px 1.1%; height:20px; line-height:20px; float:right; color:#000; background:blue; text-align:center; margin:20px 1.5% 0px 0px;}
+  .navguestz a{color:#fff; font-size:12px; text-align:center; padding:5px 1.1% 5px 1.1%; font-family:Maiandra GD; font-weight:bold;}
+
+
+
+  #bodytop1{background:#060; text-align: center; overflow:hidden; width:100%;}
+  #bodytop1 img{margin-top:7%; z-index:200;}
+  #bodytop1 h2{font-family: "Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; font-weight:600; font-style: normal; font-size:35px; height:120px; color:#FFFFFF;}
+  #bodytop1 a{color:#fff; font-size:20px; font-family:"Arial Black", Gadget, sans-serif; font-weight:bold;}
+  .buttonhold{width:65%; margin:0px auto; margin-top:-100px!important; overflow:auto; height:auto; position:absolute; z-index:100; left:35%;}
+  .joinusbut{width:auto; padding:8px 15px 8px 15px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:black; cursor:pointer; z-index:100; float:left; margin-right:20px;}
+  .joinusbut:hover{background:blue;}
+  .joinusbut a{color:#fff; font-weight:bold; font-size:16px;}
+  .buttonhold2{width:98%; margin:0px auto; margin-top:-46px!important; overflow:auto; height:auto; position:absolute; z-index:100; left:2%;}
+  .joinusbut2{width:180px; padding:8px 10px 8px 10px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:black; cursor:pointer; z-index:100; margin:0px auto;}
+  .joinusbut2:hover{background:blue;}
+  .joinusbut2 a{color:#fff; font-weight:bold; font-size:16px;}
+
+
+  .viewmoreacca{width:180px; padding:5px 10px 5px 10px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:black; cursor:pointer; z-index:100; margin:0px auto; margin-top:10px!important;}
+  .viewmoreacca:hover{background:blue;}
+  .viewmoreacca a{color:#fff; font-weight:bold;}
+  .viewmoreacca a:hover{text-decoration:none!important;}
+
+  .viewmoreaccalea{width:180px; padding:5px 10px 5px 10px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:black; cursor:pointer; z-index:100; margin-top:10px!important; text-transform:capitalize}
+  .viewmoreaccalea:hover{background:blue;}
+  .viewmoreaccalea a{color:#fff; font-weight:bold;}
+  .viewmoreaccalea a:hover{text-decoration:none!important;}
+
+  .viewmoreacca2{width:180px; padding:5px 10px 5px 10px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:blue; cursor:pointer; z-index:100; margin:0px auto; margin-top:10px!important;}
+  .viewmoreacca2:hover{background:black;}
+  .viewmoreacca2 a{color:#fff; font-size:14px!important;}
+  .viewmoreacca2 a:hover{text-decoration:none!important;}
+
+
+  #bodytop2{width:990px; height:auto; margin:0px auto; padding-bottom:20px; text-align:center; padding-top:20px; overflow:auto}
+  #bodytop2 h2{text-align:center; width:100%; font-weight:bold; margin-top:5px; font-size:25px; font-family:"Comic Sans MS", cursive;}
+  #bodytop2 table{border-bottom:0px!important; border-right:0px; border-left:0px;}
+  #bodytop2 table th{background:#000; color:#fff; height:25px; line-height:25px;}
+  #bodytop2 table th.dat{color:#000; height:25px; line-height:25px; background:none!important;}
+  #bodytop2 table td{height:20px; line-height:20px; font-size:18px;}
+  #bodytop2 table td.noneb{height:20px; line-height:20px; font-size:16px; border-left:0px; border-bottom:0px!important; border-right:0px;}
+  .changetr{background:#F3F3F3;}
+  .changeth{background:#000; color:#fff;}
+  .viewmorebut{margin:0px auto; margin-top:0px; width:120px; height:30px; line-height:30px; border-radius:3px; text-align:center; border:1px solid #000; color:#000; cursor:pointer; font-size:12px; font-family:Tahoma, Geneva, sans-serif; padding:0px 15px 0px 15px; font-weight:bold;}
+  .viewmorebut:hover{background:#D6D6D6}
+  .bankertips{margin:0px auto; margin-top:0px; width:180px; height:30px; line-height:30px; border-radius:3px; text-align:center; border:1px solid #000; color:#fff; cursor:pointer; font-size:12px; font-family:Tahoma, Geneva, sans-serif; padding:0px 15px 0px 15px; font-weight:bold; background:#000000; margin-left:10px}
+  .datebox1{text-align:center; margin:0px auto; height:53px;  padding-top:6px; width:80px; border-radius:5px; border:0px solid #000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif;}
+  .datebox1:hover{border:1px solid #000;}
+  .datebox2{text-align:center; margin:0px auto; height:53px;  padding-top:6px; width:80px; border-radius:5px; border:1px solid #000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; background:#EBEBEB}
+  #bodytop3gold{width:100%; background:gold; height:auto; padding-bottom:10px; padding-top:20px; overflow:auto;}
+  #bodytop3{width:1200px; height:auto; margin:0px auto; padding-bottom:10px; padding-top:20px; overflow:auto;}
+  #bodytop3 table tr td{font-size:17px;}
+  .bodytop3top{width:990px; height:auto; overflow:auto; margin:0px auto;}
+  .bodytop3top h2{width:650px; height:auto; font-size:45px; margin-bottom:3px; text-align:center; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;}
+  .bodytop3top p{text-align:center; width:650px; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:22px; margin-top:0px; font-weight:lighter;}
+  .bodytop3toprigh{float:right; border-radius:5px; width:auto; background:#060; color:#fff; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:60px 200px 0px 0px; cursor:pointer; text-align:center!important;}
+  .bodytop3down{width:800px; height:auto; overflow:auto; margin:0px auto; margin-top:20px;}
+  .bodytop3down h2{text-align:center; width:100%; margin-top:5px; font-size:25px; font-family:"Arial Black", Gadget, sans-serif; margin-bottom:0px;}
+  .bodytop3downbox1{float:left; margin-right:20px; margin-left:40px; font-size:20px; width:auto; text-align:center; height:auto; line-height:20px; padding:15px;}
+  .bodytop3downbox1 img{margin-top:10px;}
+  .bodytop3downbox{float:left; margin-right:20px; font-size:20px; width:auto; text-align:center; height:auto; line-height:20px; padding:15px;}
+  .bodytop3downbox img{margin-top:10px;}
+
+  input[type="text"].datepick{border:1px solid #989898; height:25px; line-height:25px; padding-left:5px;}
+  input[type="text"].datepickerr{border:1px solid red; height:25px; line-height:25px; padding-left:5px; background:#FF0000; color:white;}
+  input[type="submit"].datesub{background:#000; color:#fff; text-align:center; border:1px solid #000; cursor:pointer;}
+
+
+  .bodytop3downleft{float:left; width:580px; padding-bottom:10px;}
+  .bodytop3downleft table td{height:20px; line-height:20px; font-size:16px;}
+  .bodytop3downleft h2{text-align:center; width:100%; font-weight:bold; margin-top:0px; font-size:25px; font-family:"Arial Black", Gadget, sans-serif; color:#fff; background:#000; padding:5px 0px 5px 0px;}
+  .bodytop3downright{float:right; width:580px; padding-bottom:10px;}
+  .bodytop3downright table td{height:20px; line-height:20px; font-size:16px;}
+  .bodytop3downright h2{text-align:center; width:100%; font-weight:bold; margin-top:0px; font-size:25px; font-family:"Arial Black", Gadget, sans-serif; color:#fff; background:#000; padding:5px 0px 5px 0px;}
+  .bottomback{float:left; width:100%; text-align:center; margin-top:10px;}
+  .bottomback a{font-weight:bold; font-size:14px; text-transform:none}
+  .psmall{text-transform:none; font-weight:bold}
+  .datebox1ts{text-align:center; margin:0px auto; height:auto; padding:5px; width:auto; border-radius:5px; border:1px solid #000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif;}
+  .datebox1ts:hover{background:#000000; color:#FFF; border:1px solid #000;}
+  .datebox2ts{text-align:center; margin:0px auto; height:auto; padding:5px; width:auto; border-radius:5px; background:#000000; color:#FFF; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; border:1px solid #000;}
+  .bodytop3downcenter{width:990px; padding-bottom:10px; margin:0px auto}
+  .bodytop3downcenter h2{text-align:center; width:100%; font-weight:bold; margin-top:0px; font-size:25px; font-family:"Arial Black", Gadget, sans-serif; color:#fff; background:#000; padding:5px 0px 5px 0px;}
+
+
+  .error{color:red; font-size:16px; font-family:Maiandra GD; text-transform:none;}
+  .success{color:#060; font-size:16px; font-family:Maiandra GD;}
+
+  #bodytop4gold{width:100%; height:auto; background:gold; padding-bottom:10px; padding-top:10px;}
+  #bodytop4gold h2{text-align:center; width:100%; font-weight:bold; margin-top:10px; font-size:25px; font-family:"Comic Sans MS", cursive; margin-bottom:15px;}
+  #bodytop4{width:990px; height:auto; margin:0px auto; padding-bottom:10px; padding-top:10px;}
+  #bodytop4 h2{text-align:center; width:100%; font-weight:bold; margin-top:10px; font-size:25px; font-family:"Comic Sans MS", cursive; margin-bottom:15px;}
+  #bodytop4h{width:990px; height:auto; margin:0px auto; padding-bottom:10px; padding-top:30px;}
+  #bodytop4h h2{text-align:center; width:100%; font-weight:bold; margin-top:10px; font-size:25px; font-family:"Comic Sans MS", cursive; margin-bottom:15px;}
+  #bodytop4h span{font-size:25px;}
+  .bodytop4top{width:630px; height:auto; overflow:auto; margin:0px auto;}
+  .tipsbox{width:130px; padding-top:12px; height:55px; line-height:20px; float:left; background:#000; color:#fff; text-align:center; font-family:"Comic Sans MS", cursive; font-size:16px; margin-right:35px; margin-bottom:25px;}
+  .tipsbox:hover{background:#333333;}
+  .tipsboxr{width:130px; padding-top:12px; height:55px; line-height:20px; float:left; background:#000; color:#fff; text-align:center; font-family:"Comic Sans MS", cursive; font-size:16px; margin-right:0px; margin-bottom:25px;}
+  .tipsboxr:hover{background:#333333;}
+  .tipsboxs{width:130px; padding-top:12px; height:55px; line-height:38px; float:left; background:#000; color:#fff; text-align:center; font-family:"Comic Sans MS", cursive; font-size:16px; margin-right:35px; margin-bottom:25px;}
+  .tipsboxs:hover{background:#333333;}
+  .tipsboxbts{width:130px; padding-top:12px; height:55px; line-height:17px; float:left; background:#000; color:#fff; text-align:center; font-family:"Comic Sans MS", cursive; font-size:16px; margin-right:35px; margin-bottom:25px;}
+  .tipsboxbts:hover{background:#333333;}
+
+  #bodytop4 p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; margin-top:0px; font-weight:lighter;}
+  #bodytop4h p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; margin-top:0px; font-weight:lighter;}
+  .tipsteracca{border-radius:5px; width:450px; background:#060; color:#fff; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:0px double #000;}
+
+  .tipsteraccay{border-radius:5px; width:450px; background:#F90; color:#000; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:0px double #000;}
+  .tipsnext{font-weight:bold; font-size:20px; margin-bottom:10px;}
+
+  .tipsteraccab{border-radius:5px; width:450px; background:blue; color:#fff; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:0px double #000;}
+
+
+  #bodytop5pre{width:100%; height:auto; margin:0px auto; padding-bottom:10px; padding-top:5px; background:url(../img/grass.jpg) #060; margin-bottom:20px; text-align:center; margin-top:40px}
+  #bodytop5{width:990px; height:auto; margin:0px auto; padding-bottom:10px; padding-top:0px; margin-top:30px; margin-bottom:20px; text-align:center; color:#fff;}
+  #bodytop5 h2{text-align:center; width:100%; font-weight:bold; margin-top:10px; font-size:25px; font-family:"Comic Sans MS", cursive; margin-bottom:10px;}
+  #bodytop5 p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; margin-top:0px; font-weight:lighter;}
+  .fangame{border-radius:5px; width:400px; color:#fff; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:3px dashed gold;}
+  .bodytop5top{background:none; width:990px; margin:0px auto; height:auto; overflow:auto; margin-top:0px; padding:0px 0px 5px 0px; z-index:100;}
+  .bodytop5top img{margin:1%; border:0; width:10%; color:#fff; font-weight:bold}
+  .bodytop5top2{background:none; width:990px; margin:0px auto; height:auto; overflow:auto; margin-top:0px; padding:0px 0px 5px 0px; z-index:100;}
+  .bodytop5top2 img{margin:0% 1% 1% 1%; border:0; width:10%; color:#fff; font-weight:bold;}
+
+
+  #bodytop2lea{width:990px; height:auto; margin:0px auto; padding-bottom:420px; text-align:center; padding-top:130px; overflow:auto;}
+  #bodytop2lea h2{text-align:left; width:100%; margin-top:5px; font-family:Maiandra GD; font-size:24px; text-transform:capitalize;}
+  #bodytop2lea h1{text-align:left; width:100%; font-weight:bold; margin-top:5px; font-size:15px; font-family:"Comic Sans MS", cursive; text-decoration:underline;}
+  #bodytop2lea table{font-family:Maiandra GD; text-transform:uppercase;}
+  #bodytop2lea table a{font-size:16px!important}
+  #bodytop2lea table a:hover{text-decoration:underline;}
+  #bodytop2lea table th.ch{font-family:Maiandra GD; text-transform:capitalize; font-weight:normal; font-size:14px}
+  #bodytop3lea{width:1200px; height:auto; margin:0px auto; padding-bottom:420px; padding-top:120px; overflow:auto;}
+  #bodytop3lea table{font-family:Maiandra GD; text-transform:uppercase;}
+  #bodytop3lea table a{font-size:16px!important}
+  #bodytop3lea table a:hover{text-decoration:underline;}
+  #bodytop3lea table th.ch{font-family:Maiandra GD; text-transform:capitalize; font-weight:normal; font-size:14px}
+
+
+
+  #bodytop2leainfo{width:990px; height:auto; margin:0px auto; padding-bottom:420px; text-align:center; padding-top:120px; overflow:auto;}
+  #bodytop2leainfo h2{text-align:left; width:100%; font-weight:bold; margin-top:5px; font-size:25px; font-family:"Comic Sans MS", cursive;}
+  #bodytop2leainfo h1{text-align:left; width:100%; font-weight:bold; margin-top:5px; font-size:15px; font-family:"Comic Sans MS", cursive; text-decoration:underline;}
+  #bodytop2leainfo table{font-family:Maiandra GD; font-size:14px}
+  #bodytop2leainfo table a{}
+  #bodytop2leainfo table a:hover{text-decoration:underline;}
+
+  .waholder{float:left; width:45%; margin:20px; height:auto;}
+  .screenshot{width:100%; border:2px solid #060; height:auto; margin-bottom:10px;}
+  .waholder p{color:#000; font-size:16px; font-weight:normal!important; text-align:justify; line-height:20px; font-family:Maiandra GD; padding-left:0px!important; text-transform:none;}
+  .waholder1{width:98%; margin:20px; height:auto;}
+  .waholder1 p{color:#000; font-size:16px; font-weight:normal!important; text-align:center; line-height:20px; font-family:Maiandra GD; padding-left:0px!important; text-transform:none;}
+
+
+  #bodytop6home {
+    width: 990px;
+    height: auto;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    overflow: auto;
+}
+  #bodytop6home h1{text-align:center; width:100%; font-weight:bold; margin-top:10px; font-size:25px; font-family:"Comic Sans MS", cursive; margin-bottom:15px;}
+  #bodytop6home p{color:#000; font-size:16px; font-weight:normal!important; text-align:justify; line-height:20px; font-family:Maiandra GD; padding-left:0px!important;}
+  #bodytop6{width:990px; height:auto; margin:0px auto; padding-bottom:420px; padding-top:110px; overflow:auto;}
+  #bodytop6 table{font-size:18px;}
+  #bodytop6 h2{font-family:Maiandra GD; font-size:24px;}
+  #bodytop6 p{color:#000; font-size:16px; font-weight:normal!important; text-align:justify; line-height:20px; font-family:Maiandra GD; padding-left:0px!important;}
+  #bodytop6ft{width:500px; height:auto; margin:0px auto; padding-bottom:420px; padding-top:120px; overflow:auto;}
+  #bodytop6ft table{font-size:18px;}
+  #bodytop6ft h2{font-family:Maiandra GD; font-size:24px;}
+  #bodytop6ft p{color:#000; font-size:16px; font-weight:normal!important; text-align:justify; line-height:20px; font-family:Maiandra GD; padding-left:0px!important;}
+  .leaderboard{width:70%; height:auto; background:none; text-align:left; font-family:Maiandra GD; font-size:17px;}
+  .leaderboard fieldset{border:1px solid #000; border-radius:5px; padding:10px;}
+  .leaderboard legend{font-family:Maiandra GD; font-size:22px; }
+  .leaderboard p{margin-left:10px; margin-top:-10px;}
+
+
+  .otherspage{width:98%; margin:0px auto; height:auto; overflow:auto; padding:5px 0px 5px 0px; z-index:100; margin-bottom:20px!important; font-family:Maiandra GD; font-size:16px;}
+  .otherspage p{line-height:23px; font-size:17px}
+  .otherspage a{font-size:14px;}
+  .faqdiv{width:99%; margin:0px auto; height:auto; margin-bottom:20px!important;}
+  .faqdivtop{height:45px; line-height:45px; width:94%; background:url(../img/bcross.png) no-repeat left #F3F3F3; color:#000; padding-left:60px; font-weight:bold; font-size:17px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; cursor:pointer; overflow:hidden;}
+  .faqdivtop:hover{color:#fff; background:url(../img/wcross.png) no-repeat left #000;}
+  .faqdivdown{height:auto; border:1px solid #D5D5D5; padding:35px 10px 20px 25px; width:auto; background:#fff; color:#000; font-size:16px; font-family:Verdana, Geneva, sans-serif;}
+  .faqdivdown a{font-size:16px;}
+  .faqdivtopclick{height:45px; line-height:45px; width:94%; color:#fff; background:url(../img/minus.png) no-repeat left #000; cursor:pointer; padding-left:60px; font-weight:bold; font-size:17px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; overflow:hidden;}
+
+  .loginleft{float:left; width:30%; margin:10px 2% 10px 3%; height:auto; background:#F7F7F7; border:1px solid #EBEBEB; padding:0px 1% 1% 1%;}
+  .loginleft h3{font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+  .loginleft span{font-family:Maiandra GD; font-size:14px;}
+  .loginleft span a{font-size:16px;}
+  .loginleft a{font-size:16px;}
+  .loginleft a:hover{text-decoration:underline; font-size:16px;}
+  .loginp{margin-top:-10px;}
+  input[type="submit"].loginsub{width:80px; border:1px double #00F; border-radius:3px; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; color:#fff; margin-top:5px; font-family:Maiandra GD; font-size:14px;}
+  input[type="submit"].loginsub:hover{width:80px; border:1px double #00F; background:#2E2E2E; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; color:#fff; margin-top:5px;}
+  .loginmid{float:left; width:27%; margin:10px 2% 10px 2%; height:auto; background:#F7F7F7; border:1px solid #EBEBEB; padding:0px 1% 1% 1.2%;}
+  .loginmid h3{font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+  .regbut{width:80px; height:auto; cursor:pointer; background:#fff; padding:0px 10px 0px 10px; color:#000; text-align:center; font-size:14px; height:25px; line-height:25px; font-family:Maiandra GD; border:1px dashed #000;}
+  .regbut:hover{background:#333333; color:#FFFFFF;}
+  .loginright{float:left; width:24%; margin:10px 0px 10px 2%; height:auto; background:#F7F7F7; border:1px solid #EBEBEB; padding:0px 1% 1% 1%;}
+  .loginright h3{font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+  .loginright span{font-family:Maiandra GD; font-size:14px;}
+  .loginright span a{font-size:16px;}
+  .loginright a:hover{text-decoration:underline; font-size:16px;}
+  input[type="text"].regtext, input[type="password"].regpass{width:93%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="text"].regtext:hover, input[type="password"].regpass:hover{width:93%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="submit"].regsub{width:96%; border:1px double blue; border-radius:3px; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; color:#fff; margin-top:5px; font-family:Maiandra GD; font-size:14px;}
+  input[type="submit"].regsub:hover{width:96%; border:1px double #00F; background:#2E2E2E; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; color:#fff; margin-top:5px;}
+
+
+
+  .membleft{float:left; width:22%; margin:10px 1% 10px 0px; height:auto; background:none; border:0px solid #00C; padding:0px;}
+  .membleftnav{width:86%; background:#00F; border:1px solid #00C; padding-left:10px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-bottom:5px; margin-left:10px; margin-right:10px}
+  .membleftnav:hover, .membleftact{width:86%; background:#fff; border:1px solid #000; padding-left:10px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#000; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-bottom:5px; margin-left:10px;}
+  .membleft1{width:100%; height:auto; overflow:auto; border:0px solid #00C; padding:10px 0px 10px 0px;}
+  .membleftnav1{width:auto; float:left; background:#00F; border:1px solid #00C; padding:0px 5px 0px 5px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:16px; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px; margin-right:0px}
+  .membleftnav1:hover, .membleftact1{width:auto; float:left; background:#fff; border:1px solid #000; padding:0px 5px 0px 5px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#000; font-family:Maiandra GD; font-size:16px; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px;}
+
+  .membmid{float:left; width:73%; margin:10px 0px 10px 2%; height:auto; background:#fff; padding:0px;}
+  .membmenu{width:100%; height:auto; overflow:auto; margin-bottom:0px;}
+  .membmenunav{width:auto; background:#060; border:1px solid #060; border-bottom:none; text-align:center; border-top-left-radius:3px; border-top-right-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-left:10px; margin-right:10px; float:left; padding:0px 15px 0px 15px;}
+  .membmenunav:hover{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-left:10px; float:left; padding:0px 15px 0px 15px;}
+  .membmenuact{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-left:10px; margin-left:0px; float:left; padding:0px 15px 0px 15px;}
+  .membmenuact:hover{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-left:10px; margin-left:0px; float:left; padding:0px 15px 0px 15px;}
+  .membmiddisp{width:96%; height:auto; background:#fff; border:1px solid #000;  box-shadow:0px 1px 10px 1px #000; border-top-right-radius:5px; padding:3% 2% 3% 2%; margin-top:-1px; overflow:auto;}
+  .membmenunavep{width:auto; background:#060; border:1px solid #060; border-bottom:none; text-align:center; border-top-left-radius:3px; border-top-right-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-left:0px; margin-right:10px; float:left; padding:0px 15px 0px 15px;}
+  .membmenunavep:hover{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:14px; height:30px; line-height:30px; margin-left:0px; float:left; padding:0px 15px 0px 15px;}
+  input[type="text"].membtexted, input[type="password"].membpass{width:93%; padding-left:8px; margin-top:5px; border:1px solid #666; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px;}
+  input[type="text"].membtexted:hover, input[type="password"].membpass:hover{width:93%; padding-left:8px; margin-top:5px; border:1px solid #00F; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px;}
+  input[type="submit"].membed{width:120px; height:auto; cursor:pointer; background:#060; padding:0px 10px 0px 10px; color:#000; text-align:center; font-size:14px; height:30px; line-height:30px; font-family:Maiandra GD; border:1px solid #060; color:#fff;}
+  input[type="submit"].membed:hover{width:120px; border:1px solid #090; background:#090; padding:0px 10px 0px 10px; height:30px; line-height:30px; cursor:pointer; text-align:center; color:#fff;}
+
+
+
+
+
+
+
+
+
+  .contactushleft{float:left; width:50%; height:auto; margin-top:20px;}
+  input[type="text"].contactush, input[type="password"].loginpass{width:93%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="text"].contactush:hover, input[type="password"].loginpass:hover{width:93%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  .textarecon{width:96.5%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #333; margin-bottom:5px; border-radius:5px; margin-left:5px; height:100px; padding-top:5px;}
+  .textarecon:hover{width:96.5%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; margin-bottom:5px; border-radius:5px; margin-left:5px; height:100px;  padding-top:5px;}
+  input[type="submit"].contactsub{width:120px; border:1px double #00F; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:10px; color:#fff;}
+  input[type="submit"].contactsub:hover{width:120px; border:1px double #00F; background:#2E2E2E; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:10px; color:#fff;}
+  .contactushright{float:right; width:45%; height:auto; margin-top:20px; border-radius:10px;}
+  .contactushright h4{margin-bottom:5px;}
+  input[type="submit"].loginsubfan{width:120px; border:1px double #00F; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:0px; color:#fff; font-weight:bold; font-size:16px;}
+  input[type="submit"].loginsubfan:hover{width:120px; border:1px double #00F; background:#2E2E2E; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:0px; color:#fff;}
+  .countdown{border:5px solid red; width:180px; padding:10px; margin-left:30px; height:auto; text-align:center; font-weight:bold; font-size:30px; font-family:"Comic Sans MS", cursive; border-radius:5px;}
+
+
+  .newsholder{width:930px; height:auto; overflow:auto; margin-bottom:20px; background:#fff; padding:10px 10px 10px 10px;}
+  .newsholderl{float:left; width:280px; height:150px; margin-right:30px;}
+  .newsholderl img{border:3px solid #666;}
+  .newsholderr{float:left; width:620px; height:auto; overflow:auto; padding-top:10px;}
+  .newtitle{width:100%; margin-bottom:20px; font-family:Maiandra GD; font-size:22px; color:#000000; font-weight:bold; text-transform:uppercase}
+  .newbody{width:99%; height:auto;}
+  .newbody p{color:#000; font-size:13.5px; font-weight:normal!important; text-align:justify; line-height:20px; font-family:arial, verdana, tahoma, sans-serif; padding-left:0px!important;}
+  .newbody a{font-size:13.5px; font-family:arial, verdana, tahoma, sans-serif;}
+  .newsbottom{margin-bottom:0px; width:98%; float:right; height:30px;}
+  .newsbottoml{float:left; width:70%; margin-right:2%; overflow:auto}
+  .newsbottoml1{float:left; width:25%; margin-right:2%; font-size:12px; font-family:Maiandra GD; background:url(../img/blog_c.html) center left no-repeat; padding-left:22px}
+  .newsbottoml2{float:left; width:25%; margin-right:2%; font-size:12px; font-family:Maiandra GD; background:url(../img/blog_p.html) center left no-repeat; padding-left:22px}
+  .newsbottomr{float:right; width:20%; margin-right:1%}
+  .newsread{width:auto; height:25px; line-height:25px; text-align:center; border:1px double #00f; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD";}
+  .viewall{width:80px; height:auto; cursor:pointer; background:#fff; padding:0px 10px 0px 10px; color:#000; margin:0px auto; text-align:center; font-size:14px; height:25px; line-height:25px; font-family:Maiandra GD; border:1px dashed #000;}
+  .viewall:hover{background:#333333; color:#FFFFFF;}
+
+  .readmore{width:auto; padding:0px 10px 0px 10px; height:25px; line-height:25px; text-align:center; border:1px double #00f; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; float:left;}
+
+  .viewmorep{width:120px; padding:0px 10px 0px 10px; height:30px; line-height:25px; text-align:center; border:1px double #00f; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD";}
+
+  .payme{width:150px; padding:10px 10px 10px 10px; height:auto; text-align:center; border:1px double #000; background:blue; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold; float:left}
+
+  .payme:hover{width:150px; padding:10px 10px 10px 10px; height:auto; text-align:center; border:1px double #000; background:#fff; color:#000; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold; float:left}
+
+  .payme2{width:170px; padding:5px 10px 5px 10px; height:auto; text-align:center; border:1px double #000; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold; float:left;}
+
+  .payme3{width:170px; padding:5px 10px 5px 10px; height:auto; text-align:center; border:1px double #000; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold; float:left; margin-right:20px;}
+
+  .payme4{width:240px; padding:5px 5px 5px 5px; height:auto; text-align:center; border:1px double #000; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold;}
+
+  .payme5{width:240px; padding:5px 5px 5px 5px; height:auto; text-align:center; border:1px double #000; background:blue; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold;}
+
+  .payme6{width:170px; padding:5px 5px 5px 5px; height:auto; text-align:center; border:1px double #000; background:blue; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; font-weight:bold; margin-left:20px;}
+
+  .observeerror{color:red; margin:0px auto; font-weight:normal!important; text-align:center; padding-left:0px!important; font-family:Maiandra GD; font-size:20px!important; font-weight:bold!important;}
+
+
+
+  .tipsadlo{width:400px; margin:0px auto; padding:10% 10% 5% 10%; height:auto; position:relative;}
+  .tipsadlo-booking{height:auto; overflow:auto; border:0px solid #000; width:auto; font-family:Maiandra GD; font-size:14px; text-align:justify; background:#D6D6D6; border-bottom:1px solid #000; padding:10px; border-top-left-radius:5px; border-top-right-radius:5px;}
+  .tipsadlo-booking h3{font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+  .tipsadlo fieldset{border:0px solid #000; width:auto; background:#fff; padding:0px 12px 0px 12px; margin:0px auto;}
+  .tipsadlo p{margin-bottom:20px;}
+  .tipsadlo span{font-size:16px; font-family:Maiandra GD;}
+  input[type="submit"].loginad{width:auto; border:1px double #00F; border-radius:3px; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px 10px 0px 10px; color:#fff; margin-top:13px; font-family:Maiandra GD; font-size:14px; margin-left:5px;}
+  input[type="submit"].loginad:hover{width:auto; border:1px double #00F; padding:0px 10px 0px 10px; background:#2E2E2E; margin-top:13px; margin-left:5px;}
+
+  .adedittable{width:auto; border:1px double #00F; border-radius:3px; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px 10px 0px 10px; color:#fff; margin-top:13px; font-family:Maiandra GD; font-size:14px; margin-left:5px;}
+  .adedittable:hover{width:auto; border:1px double #00F; padding:0px 10px 0px 10px; background:#2E2E2E; margin-top:13px; margin-left:5px;}
+
+
+  #bodytop6ad{width:100%; height:auto; margin:0px auto; padding-bottom:40px; padding-top:115px; overflow:auto;}
+  #bodytop6ad h3{width:98%; margin-left:2%; margin:0px auto; text-align:left; font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+  .bodytop6ad{width:98%; margin-left:2%; height:auto; margin:0px auto; padding-bottom:10px; margin-top:20px; overflow:auto; background:#fff;}
+  .bodytop6ad fieldset{border:0px solid #000; width:auto; background:#fff; padding:12px 12px 2px 12px; overflow:auto;}
+  #bodytop6ad span{font-size:16px; font-weight:bold;}
+  #bodytop6ad table{font-size:16px;}
+
+
+  .freead{background:#009900; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+  .basicad{background:#4FA7FF; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+  .premad{background:#F90; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+  .premad2{background:#F90; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-left:15px; cursor:pointer; color:#fff;}
+  .expirad{background:#900; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+  .expirad2{background:#900; width:70px; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; margin-right:15px; cursor:pointer; color:#fff;}
+  .tipgenad{background:#00F; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:0px; cursor:pointer; color:#fff;}
+  input[type="text"].adsearuser{width:25%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="text"].adsearuser:hover{width:25%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  .adtextarecon{width:95%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #333; margin-bottom:5px; border-radius:5px; margin-left:5px; height:50px; padding-top:5px;}
+  .adtextarecon:hover{width:95%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; margin-bottom:5px; border-radius:5px; margin-left:5px; height:50px; padding-top:5px;}
+  .adtextareblog{width:95%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #333; margin-bottom:5px; border-radius:5px; margin-left:5px; height:150px; padding-top:5px;}
+  .adtextareblog:hover{width:95%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; margin-bottom:5px; border-radius:5px; margin-left:5px; height:150px; padding-top:5px;}
+  input[type="text"].adcontactush{width:95%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="text"].adcontactush:hover{width:95%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="text"].adcontactush2{width:88%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+  input[type="text"].adcontactush2:hover{width:88%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+
+  .divdir{margin:0px auto; width:145px; height:26px; margin-top:15px;}
+  .divback{background:url(../img/tips_back.png) no-repeat; width:25px; height:25px; float:left; margin-top:-25px; cursor:pointer;}
+  .divcent{width:auto; height:26px; line-height:26px; text-align:center;}
+  .divfor{background:url(../img/tips_forward.png) no-repeat; width:25px; height:25px; float:right; margin-top:-25px; cursor:pointer;}
+  .divback2{background:url(../img/ligarrowb.png) no-repeat; width:25px; height:25px; float:left; margin-top:-25px; cursor:context-menu;}
+  .divfor2{background:url(../img/ligarrowf.png) no-repeat; width:25px; height:25px; float:right; margin-top:-25px; cursor:context-menu;}
+
+
+  #footer{height:355px; background:#040404; border-top:3px solid gold; width:100%; position:absolute; bottom:0px; color:white; overflow:auto}
+  .footer1{width:990px; height:auto; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; margin:0px auto; overflow:hidden;}
+  .foot1{float:left; margin:20px 3% 0px 5%; height:auto; background:#040404; width:18%; color:gold;}
+  .foot1 font{text-decoration:underline;}
+  .foot1 ul{margin-left:0px; margin-top:5px;}
+  .foot1 ul li{list-style:none; margin-left:-35px; margin-bottom:1px;}
+  .foot1 ul li a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14.5px; color:#fff;}
+  .foot1 ul li a:hover{text-decoration:underline; color:gold;}
+  .foot2{float:left; margin:20px 3% 0px 1%; height:auto; background:#040404; width:19%; color:gold;}
+  .foot2 font{text-decoration:underline;}
+  .foot2 ul{margin-left:0px; margin-top:5px;}
+  .foot2 ul li{list-style:none; margin-left:-35px; margin-bottom:1px;}
+  .foot2 ul li a{font-family:Georgia, "Times New Roman", Times, serif; font-size:14.5px; color:#FFF;}
+  .foot2 ul li a:hover{text-decoration:underline; color:gold}
+  .foot3{float:left; margin:20px 3% 0px 1%; height:auto; background:#040404; width:20%; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:14.5px;}
+  .foot3 img{border:0; width:31px; height:37px; margin:10px 5px;}
+  .foot3 font{color:gold; text-decoration:underline; text-transform:capitalize;}
+  .foot4{float:right; margin:20px 0px 0px 0px; height:auto; background:#040404; width:24%; color:gold;}
+  .foot4 font{text-decoration:underline;}
+  .foot4 p{margin-top:5px; color:#fff; font-family:Arial, Helvetica, sans-serif!important; font-size:14px;}
+  .onlinep{width:990px; margin:0px auto; height:auto; background:#040404; color:white; text-align:center;}
+  .onlinep font{text-decoration:underline; color:gold;}
+  .onlinep img{margin-top:3px; width:90%;}
+  .foot5{width:990px; height:auto; text-align:center; margin-top:10px!important; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; border-top:0px solid #FFF; margin:0px auto;}
+  .foot5 a{text-decoration:underline; color:gold;}
+}
+
+@media (max-width:768px) {
+  /* CSS Document */
+
+html, body{margin:auto; background:white; height:100%; font-size:14px;}
+body h2{font-size:23px; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif Verdana; margin-bottom:20px; margin-top:20px; text-align:center; text-transform:uppercase;}
+a{text-decoration:none; font-size:14px; font-family:Maiandra GD;}
+p{font-size:14px;}
+table th{font-size:18px;}
+table td{font-size:16px;}
+table a{font-size:16px;}
+.onbody{height:100%; width:100%; position:fixed; background:url(../img/fanbg.png) center repeat; background-size:cover; z-index:200; text-align:center;}
+.onbody img{padding-top:20%;}
+#maincont{position:relative; width:100%; margin:0px auto; min-height:100%; background:white; overflow:hidden}
+
+.mheader{height:auto; padding:5px 0px 5px 0px; width:100%; text-align:center; background:#040404; border-bottom:1px solid blue; overflow:hidden; z-index:1000; position:fixed; top:0;}
+.mheaderhom{height:auto; padding:5px 0px 5px 0px; width:100%; text-align:center; background:#040404; border-bottom:1px solid blue; overflow:hidden; z-index:1000; position:fixed; margin-top:75px;}
+#headerrestr{width:100%; height:60px; padding:10px 0px 15px 0px; overflow:hidden; background:red; position:fixed; z-index:2000; text-align:center; font-weight:bold; color:#fff; font-size:14px;}
+
+
+.mheaderimg{width:auto; margin:0px auto; height:70px; float:left; margin-left:10px;}
+.mheaderimg img{border:0px;}
+.mmenuright{position:absolute; right:10px; top:5px; width:40px; height:70px; background:url(../img/mmenu1.png) no-repeat center right; cursor:pointer;}
+
+.mmenu{min-height:auto; overflow:auto; position:fixed; z-index:999; background:#040404; width:100%; top:70px;}
+.mmenuhom{min-height:auto; overflow:auto; position:fixed; z-index:999; background:#040404; width:100%; top:125px;}
+
+
+.nav{width:100%; height:31px; line-height:26px; text-align:center;}
+.nav a{color:#fff; font-family:Maiandra GD; font-size:14px; padding:0px 30px 0px 30px; text-transform:uppercase; float:left; margin-left:0px;}
+.nav a:hover{color:#828282;}
+.anav{width:100%; height:31px; line-height:26px; text-align:left; margin-left:0px; padding-top:30px;}
+.anav a{color:#828282; font-family:Maiandra GD; font-size:14px; padding:0px 30px 0px 30px; text-transform:uppercase;}
+
+.navguest{width:auto; padding:10px 1.5% 5px 1.5%; height:auto; color:#000; background:blue; text-align:center; position:absolute; right:70px; top:22px; cursor:pointer;}
+.navguest a{color:#fff; font-size:120%; text-align:center; padding:5px 15px 5px 15px; font-family:Maiandra GD; font-weight:bold;}
+.welcome{position:absolute; bottom:0; color:#fff; font-size:100%;}
+.welcome a{color:#fff; font-size:100%;}
+
+
+#bodytop1{background:#060; text-align: center; overflow:hidden; width:100%;}
+#bodytop1 img{margin-top:70px; z-index:200;}
+#bodytop1 a{color:#fff; font-size:150%; font-family:"Arial Black", Gadget, sans-serif; font-weight:bold;}
+.newmenua{color:#ffffff; font-weight:bold; font-size:16px;}
+.joinusbut{margin:0px auto; margin-top:15px; color:#ffffff; font-weight:bold; font-size:16px; width:90%; padding:10px 10px 10px 10px; border-radius:5px; text-align:center; border:1px solid #000; background:#000000; cursor:pointer;}
+.joinusbut:hover{background:blue;}
+
+#bodytop6others{width:95%!important; height:auto; margin:0px auto; padding-bottom:590px; padding-top:20px; overflow:auto; margin-top:80px!important; font-size:100%;}
+#bodytop6others p{color:#000; font-weight:normal!important; text-align:justify; padding-left:0px!important; font-family:Maiandra GD;}
+.bodytop6othersp{color:#000; width:95%; margin:0px auto; font-weight:normal!important; text-align:justify; padding-left:0px!important; font-family:Maiandra GD;}
+#bodytop6others2{width:98%; height:auto; margin:0px auto; padding-bottom:590px; padding-top:20px; overflow:auto; margin-top:80px!important;}
+#bodytop6others table{font-size:95%!important;}
+
+#bodytop2{width:100%; height:auto; margin:0px auto; margin-top:0px!important; padding-bottom:20px; text-align:center; padding-top:5px; overflow:auto}
+#bodytop2 table{border-bottom:0px!important; border-right:0px; border-left:0px;}
+#bodytop2 table th{background:#000; color:#fff;}
+#bodytop2 table th.dat{color:#000; background:none!important;}
+#bodytop2 table td{font-size:100%;}
+#bodytop2 table td.noneb{font-size:100%; border-left:0px; border-bottom:0px!important; border-right:0px;}
+#bodytop2 table td.noneb a{font-size:100%;}
+.changetr{background:#F3F3F3;}
+.changeth{background:#000; color:#fff;}
+.viewmorebut{margin:0px auto; margin-top:0px; width:94%; border-radius:3px; text-align:center; border:1px solid #000; color:#000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; padding:10px 3% 10px 3%; font-weight:bold;}
+.viewmorebut:hover{background:#D6D6D6}
+.bankertips{margin:0px auto; margin-top:0px; width:94%; border-radius:3px; text-align:center; border:1px solid #000; color:#fff; cursor:pointer; font-family:Maiandra GD; padding:10px 3% 10px 3%; font-weight:bold; background:#000000; margin-left:5px;}
+.datebox1{text-align:center; margin:0px auto; height:auto; padding:10px; width:70%; border-radius:5px; border:0px solid #000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; font-size:100%;}
+.datebox1:hover{border:1px solid #000;}
+.datebox2{text-align:center; margin:0px auto; height:auto; padding:10px; width:70%; border-radius:5px; border:1px solid #000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; background:#EBEBEB; font-size:100%;}
+
+#bodytop3gold{width:100%; background:gold; height:auto; padding-bottom:50px; padding-top:0px; overflow:auto;}
+#bodytop3{width:100%; height:auto; padding-bottom:10px; padding-top:0px; overflow:auto;}
+.bodytop3top{width:100%; height:auto; overflow:auto; text-align:center;}
+.bodytop3top p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:150%; margin-top:0px; font-weight:lighter;}
+.bodytop3top a{font-size:150%;}
+.bodytop3toprigh{border-radius:5px; width:70%; height:auto; background:#060; color:#fff; font-size:150%; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; cursor:pointer;}
+.bodytop3down{width:100%; height:auto; overflow:auto; margin:0px auto; margin-top:20px;}
+.bodytop3downbox1{float:left; margin-right:1%; margin-left:1%; font-size:150%; width:16%; text-align:center; height:auto;  padding:1% 1% 3% 1%; font-family:Maiandra GD;}
+.bodytop3downbox1 img{margin-top:10px;}
+.bodytop3downbox{float:left; margin-right:1%; font-size:150%; width:16%; text-align:center; height:auto; padding:1% 1% 3% 1%; font-family:Maiandra GD;}
+.bodytop3downbox img{margin-top:10px;}
+
+input[type="text"].datepick{border:1px solid #000; width:50%; height:20px; line-height:20px; padding-top:5px; padding-bottom:5px; padding-left:5px; font-weight:bold;}
+input[type="text"].datepickerr{border:1px solid red; width:50%; height:20px; line-height:20px; padding-top:5px; padding-bottom:5px; padding-left:5px; background:#FF0000; color:white;}
+input[type="submit"].datesub{background:#000; color:#fff; text-align:center; border:1px solid #000; cursor:pointer;}
+
+
+.bodytop3downleft{width:100%; padding-bottom:10px;}
+
+.bottomback{float:left; width:100%; text-align:center; margin-top:10px;}
+.bottomback a{font-weight:bold; font-size:100%; text-transform:none}
+.psmall{text-transform:none; font-weight:bold}
+.datebox1ts{text-align:center; margin:0px auto; height:auto; padding:5px; width:auto; border-radius:5px; border:1px solid #000; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; font-size:15px!important;}
+.datebox1ts:hover{background:#000000; color:#FFF; border:1px solid #000;}
+.datebox2ts{text-align:center; margin:0px auto; height:auto; padding:5px; width:auto; border-radius:5px; background:#000000; color:#FFF; cursor:pointer; font-family:Tahoma, Geneva, sans-serif; border:1px solid #000; font-size:15px!important;}
+
+
+.error{color:red; font-size:18px; font-family:Maiandra GD; text-transform:none;}
+.success{color:#060; font-size:18px; font-family:Maiandra GD;}
+
+#bodytop4gold{width:100%; height:auto; background:gold; padding-bottom:10px; padding-top:30px;}
+#bodytop4{width:100%; height:auto; margin:0px auto; padding-bottom:10px; padding-top:10px;}
+#bodytop4h{width:90%; height:auto; margin:0px auto; padding-bottom:10px; padding-top:30px;}
+#bodytop4h span{font-size:150%;}
+.bodytop4top{width:96%; height:auto; overflow:auto; margin:0px auto; padding-top:20px!important;}
+.bodytop4toplog{width:100%; height:auto; overflow:auto; margin:0px auto; padding-top:20px!important;}
+
+.tipsboxs{width:45%; float:left; height:110px; line-height:110px; padding:12px 0px 12px 0px; background:#000; color:#fff; text-align:center; margin-bottom:10px; margin-left:3%; font-size:130%;}
+.tipsbox:hover{background:#333333;}
+
+.tipsbox{width:45%; float:left; height:80px; padding:42px 0px 12px 0px; background:#000; color:#fff; text-align:center; margin-bottom:10px; margin-left:3%; font-size:130%;}
+.tipsboxs:hover{background:#333333;}
+
+.tipsboxbts{width:45%; float:left; height:80px; padding:42px 0px 12px 0px; background:#000; color:#fff; text-align:center; margin-bottom:10px; margin-left:3%; font-size:130%;}
+.tipsboxbts:hover{background:#333333;}
+
+
+.bodytop3downcenter{width:100%; padding-bottom:10px; margin:0px auto;}
+.bodytop3downcenter a{font-size:130%!important;}
+
+#bodytop4 p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; margin-top:0px; font-weight:lighter;}
+#bodytop4h p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:150%; margin-top:0px; font-weight:lighter;}
+#bodytop4h a{font-size:100%;}
+.smallacca{font-size:50%;}
+.tipsteracca{border-radius:5px; width:90%; background:#060; color:#fff; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:0px double #000; font-size:25px;}
+
+.tipsteraccay{border-radius:5px; width:90%; background:#F90; color:#000; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:0px double #000;}
+.tipsnext{font-weight:bold; font-size:20px; margin-bottom:10px;}
+
+.tipsteraccab{border-radius:5px; width:90%; background:blue; color:#fff; font-size:25px; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:0px double #000;}
+
+#bodytop5pre{width:100%; height:auto; margin:0px auto; padding-bottom:10px; padding-top:5px; background:url(../img/grass.jpg) #060; margin-bottom:20px; text-align:center; margin-top:40px}
+#bodytop5{width:100%; height:auto; margin:0px auto; padding-bottom:10px; padding-top:0px; margin-top:30px; margin-bottom:20px; text-align:center; color:#fff;}
+#bodytop5 p{text-align:center; width:100%; height:auto; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:150%; margin-top:0px; font-weight:lighter;}
+#bodytop5 a{font-size:150%;}
+.fangame{border-radius:5px; width:80%; color:#fff; font-family:Verdana, Geneva, sans-serif; padding:15px; font-weight:bold; margin:0px auto; text-align:center; border:3px dashed gold;}
+.bodytop5top{background:none; width:100%; margin:0px auto; height:auto; overflow:auto; margin-top:0px; padding:0px 0px 5px 0px; z-index:100;}
+.bodytop5top img{margin:1%; border:0; width:42%; color:#fff; font-weight:bold}
+.bodytop5top2{background:none; width:100%; margin:0px auto; height:auto; overflow:auto; margin-top:0px; padding:0px 0px 5px 0px; z-index:100;}
+.bodytop5top2 img{margin:0% 1% 1% 1%; border:0; width:42%; color:#fff; font-weight:bold;}
+
+
+#bodytop2lea{width:100%; height:auto; margin:0px auto; padding-bottom:227px; text-align:center; padding-top:120px; overflow:auto;}
+#bodytop2lea h1{text-align:left; width:100%; font-weight:bold; margin-top:5px; font-size:15px; font-family:"Comic Sans MS", cursive; text-decoration:underline;}
+#bodytop2lea table{font-family:Maiandra GD; text-transform:uppercase;}
+#bodytop2lea table a{font-size:16px!important}
+#bodytop2lea table a:hover{text-decoration:underline;}
+#bodytop2lea table th.ch{font-family:Maiandra GD; text-transform:capitalize; font-weight:normal; font-size:100%}
+#bodytop3lea{width:100%; height:auto; margin:0px auto; padding-bottom:227px; padding-top:120px; overflow:auto;}
+#bodytop3lea table{font-family:Maiandra GD; text-transform:uppercase;}
+#bodytop3lea table a{font-size:16px!important}
+#bodytop3lea table a:hover{text-decoration:underline;}
+#bodytop3lea table th.ch{font-family:Maiandra GD; text-transform:capitalize; font-weight:normal; font-size:100%}
+
+
+
+#bodytop2leainfo{width:100%; height:auto; margin:0px auto; padding-bottom:227px; text-align:center; padding-top:120px; overflow:auto;}
+#bodytop2leainfo h1{text-align:left; width:100%; font-weight:bold; margin-top:5px; font-size:15px; font-family:"Comic Sans MS", cursive; text-decoration:underline;}
+#bodytop2leainfo table{font-family:Maiandra GD; font-size:100%}
+#bodytop2leainfo table a{}
+#bodytop2leainfo table a:hover{text-decoration:underline;}
+
+.waholder{float:left; width:97%; margin:20px; height:auto;}
+.screenshot{width:100%; border:2px solid #060; height:auto; margin-bottom:10px;}
+.waholder p{color:#000; font-size:100%; font-weight:normal!important; text-align:justify; font-family:Maiandra GD; padding-left:0px!important; text-transform:none;}
+.waholder1{width:98%; margin:20px; height:auto;}
+.waholder1 p{color:#000; font-size:100%; font-weight:normal!important; text-align:center; font-family:Maiandra GD; padding-left:0px!important; text-transform:none;}
+
+
+#bodytop6home{width:90%; height:auto; margin:0px auto; padding-bottom:590px; padding-top:20px; overflow:auto;}
+#bodytop6home h1{text-align:center; width:100%; font-weight:bold; margin-top:10px; font-size:25px; font-family:"Comic Sans MS", cursive; margin-bottom:15px;}
+#bodytop6home p{color:#000; font-size:100%!important; font-weight:normal!important; text-align:justify; font-family:Maiandra GD; padding-left:0px!important;}
+#bodytop6{width:100%; height:auto; margin:0px auto; padding-bottom:590px; padding-top:110px; overflow:auto;}
+#bodytop6 table{font-size:150%;}
+#bodytop6 p{color:#000; font-size:100%; font-weight:normal!important; text-align:justify; font-family:Maiandra GD; padding-left:0px!important;}
+#bodytop6ft{width:500px; height:auto; margin:0px auto; padding-bottom:590px; padding-top:120px; overflow:auto;}
+#bodytop6ft table{font-size:18px;}
+#bodytop6ft p{color:#000; font-size:100%; font-weight:normal!important; text-align:justify; font-family:Maiandra GD; padding-left:0px!important;}
+.leaderboard{width:90%; height:auto; background:none; text-align:left; font-family:Maiandra GD; font-size:17px;}
+.leaderboard fieldset{border:1px solid #000; border-radius:5px; padding:10px;}
+.leaderboard legend{font-family:Maiandra GD; font-size:22px; }
+.leaderboard p{margin-left:10px; margin-top:-10px;}
+
+
+.otherspage{width:98%; margin:0px auto; height:auto; overflow:auto; padding:5px 0px 5px 0px; z-index:100; margin-bottom:20px!important; font-family:Maiandra GD; font-size:16px;}
+.otherspage p{font-size:100%}
+.otherspage a{font-size:100%;}
+.faqdiv{width:99%; margin:0px auto; height:auto; margin-bottom:20px!important;}
+.faqdivtop{height:45px; line-height:45px; width:94%; background:url(../img/bcross.png) no-repeat left #F3F3F3; color:#000; padding-left:60px; font-weight:bold; font-size:17px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; cursor:pointer; overflow:hidden;}
+.faqdivtop:hover{color:#fff; background:url(../img/wcross.png) no-repeat left #000;}
+.faqdivdown{height:auto; border:1px solid #D5D5D5; padding:35px 10px 20px 25px; width:auto; background:#fff; color:#000; font-size:16px; font-family:Verdana, Geneva, sans-serif;}
+.faqdivdown a{font-size:16px;}
+.faqdivtopclick{height:45px; line-height:45px; width:94%; color:#fff; background:url(../img/minus.png) no-repeat left #000; cursor:pointer; padding-left:60px; font-weight:bold; font-size:17px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; overflow:hidden;}
+
+.loginleft{width:90%; margin:0px auto; margin-bottom:40px!important; height:auto; background:#F7F7F7; border:1px solid #EBEBEB; padding:20px 3% 20px 3%; border-radius:10px;}
+.loginleft span{font-family:Maiandra GD; font-size:100%;}
+.loginleft span a{font-size:100%;}
+.loginleft a{font-size:100%;}
+.loginleft a:hover{text-decoration:underline; font-size:100%;}
+.loginp{margin-top:10px;}
+input[type="submit"].loginsub{width:auto; padding-left:15px; padding-right:15px; height:30px; line-height:25px; text-align:center; background:#000; color:#fff; cursor:pointer; font-family:Maiandra GD; font-size:16px; border-radius:5px; border:none; margin-top:15px;}
+input[type="submit"].loginsub:hover{width:auto; padding-left:15px; padding-right:15px; height:30px; line-height:25px; text-align:center;  background:blue; color:#fff; cursor:pointer; font-family:Maiandra GD; font-size:16px; border-radius:5px; border:none; margin-top:15px;}
+.loginmid{width:90%; margin:0px auto; margin-bottom:40px!important; height:auto; background:#F7F7F7; border:1px solid #EBEBEB; padding:0px 3% 20px 3%; border-radius:10px;}
+.loginmid p{font-size:100%;}
+.loginmid a{font-size:100%;}
+.regbut{width:130px; height:auto; cursor:pointer; background:#fff; padding:10px; color:#000; text-align:center; font-size:100%!important; font-family:Maiandra GD; border:1px dashed #000;}
+.regbut:hover{background:#333333; color:#FFFFFF;}
+.loginright{width:90%; margin:0px auto; margin-bottom:40px!important; height:auto; background:#F7F7F7; border:1px solid #EBEBEB; padding:0px 3% 20px 3%; border-radius:10px;}
+.loginright a:hover{text-decoration:underline;}
+input[type="text"].regtext, input[type="password"].regpass{width:97%; padding-left:1%; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:20px; line-height:20px; padding-top:5px; padding-bottom:5px; margin-bottom:10px; border-radius:5px; margin-left:5px; font-size:100%;}
+input[type="text"].regtext:hover, input[type="password"].regpass:hover{width:97%; padding-left:1%; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:20px; line-height:20px; padding-top:5px; padding-bottom:5px; margin-bottom:10px; border-radius:5px; margin-left:5px; font-size:100%;}
+
+input[type="submit"].regsub{width:auto; margin:0px auto; border:1px double blue; border-radius:3px; background:#000000; height:30px; line-height:20px; cursor:pointer; text-align:center; padding:5px 15px 5px 15px; color:#fff; margin-top:5px!important; font-family:Maiandra GD; font-size:100%;}
+input[type="submit"].regsub:hover{width:auto; margin:0px auto; border:1px double #00F; background:#2E2E2E; height:30px; line-height:20px; cursor:pointer; text-align:center; padding:5px 15px 5px 15px; color:#fff; margin-top:5px!important;}
+
+
+
+.membleft{width:100%; height:auto; overflow:auto; border:0px solid #00C; padding:10px 0px 10px 0px;}
+.membleftnav{width:auto; float:left; background:#00F; border:1px solid #00C; padding:0px 5px 0px 5px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:100%; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px; margin-right:0px}
+.membleftnav:hover, .membleftact{width:auto; float:left; background:#fff; border:1px solid #000; padding:0px 5px 0px 5px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px;}
+.membmid{width:100%; margin:0px auto; height:auto; background:#fff; padding:0px;}
+.membmenu{width:100%; height:auto; overflow:auto; margin-bottom:0px;}
+.membmenunav{width:auto; background:#060; border:1px solid #060; border-bottom:none; text-align:center; border-top-left-radius:3px; border-top-right-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:100%; height:30px; line-height:30px; margin-left:10px; margin-right:10px; float:left; padding:0px 15px 0px 15px;}
+.membmenunav:hover{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:30px; line-height:30px; margin-left:10px; float:left; padding:0px 15px 0px 15px;}
+.membmenuact{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:30px; line-height:30px; margin-left:10px; margin-left:0px; float:left; padding:0px 15px 0px 15px;}
+.membmenuact:hover{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:30px; line-height:30px; margin-left:10px; margin-left:0px; float:left; padding:0px 15px 0px 15px;}
+.membmiddisp{width:94%; height:auto; background:#fff; border:1px solid #000;  box-shadow:0px 1px 10px 1px #000; border-top-right-radius:5px; padding:3% 2% 3% 2%; margin-top:-1px!important; overflow:auto;}
+.membmenunavep{width:auto; background:#060; border:1px solid #060; border-bottom:none; text-align:center; border-top-left-radius:3px; border-top-right-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:100%; height:30px; line-height:30px; margin-left:0px; margin-right:10px; float:left; padding:0px 15px 0px 15px;}
+.membmenunavep:hover{width:auto; background:#fff; border:1px solid #000; border-bottom:none; padding-left:10px; border-top-left-radius:3px; border-top-right-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:30px; line-height:30px; margin-left:0px; float:left; padding:0px 15px 0px 15px;}
+input[type="text"].membtexted, input[type="password"].membpass{width:93%; padding-left:8px; margin-top:5px; border:1px solid #666; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px;}
+input[type="text"].membtexted:hover, input[type="password"].membpass:hover{width:93%; padding-left:8px; margin-top:5px; border:1px solid #00F; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px;}
+input[type="submit"].membed{width:140px; height:auto; cursor:pointer; background:#060; padding:0px 10px 0px 10px; color:#000; text-align:center; font-size:100%; height:30px; line-height:30px; font-family:Maiandra GD; border:1px solid #060; color:#fff;}
+input[type="submit"].membed:hover{width:140px; border:1px solid #090; background:#090; padding:0px 10px 0px 10px; height:30px; line-height:30px; cursor:pointer; text-align:center; color:#fff;}
+
+
+
+
+
+
+
+
+
+.contactushleft{width:96%; margin:0px auto; height:auto; margin-top:20px; font-size:100%;}
+.contactushleft label{font-size:150%;}
+input[type="text"].contactush, input[type="password"].loginpass{width:97%; padding-left:5px; margin-top:5px; margin-bottom:2px; border:1px solid #666; height:20px; line-height:20px; padding-top:5px; padding-bottom:5px; background:#fff;}
+input[type="text"].contactush:hover, input[type="password"].loginpass:hover{width:97%; padding-left:5px; margin-top:5px; margin-bottom:2px; border:1px solid blue; height:20px; line-height:20px; padding-top:5px; padding-bottom:5px; background:#fff;}
+.textarecon{width:96.5%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #333; margin-bottom:5px; border-radius:5px; margin-left:5px; height:100px; padding-top:5px;}
+.textarecon:hover{width:96.5%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; margin-bottom:5px; border-radius:5px; margin-left:5px; height:100px;  padding-top:5px;}
+input[type="submit"].contactsub{width:120px; border:1px double #00F; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:10px; color:#fff;}
+input[type="submit"].contactsub:hover{width:120px; border:1px double #00F; background:#2E2E2E; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:10px; color:#fff;}
+.contactushright{width:96%; margin:0px auto; text-align:center; height:auto; margin-top:20px!important; border-radius:10px; font-size:100%;}
+.contactushright h4{margin-bottom:5px; text-align:center;}
+.contactushright p{color:#000; font-size:100%; font-weight:normal!important; text-align:justify; padding-left:0px!important;}
+input[type="submit"].loginsubfan{width:120px; border:1px double #00F; background:#2E2E2E; height:70px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:0px; color:#fff;}
+input[type="submit"].loginsubfan:hover{width:120px; border:1px double #00F; background:#2E2E2E; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px; margin-left:0px; color:#fff;}
+.countdown{border:5px solid red; width:80%; margin:0px auto; padding:10px; height:auto; text-align:center; font-weight:bold; font-size:30px; font-family:"Comic Sans MS", cursive; border-radius:5px;}
+
+
+.newsholder{width:96%; height:auto; margin:0px auto; overflow:auto; margin-bottom:20px!important; background:#fff; padding:10px 0px 20px 0px;}
+.newsholderl{float:left; width:99%; height:auto;}
+.newsholderl img{border:3px solid #666;}
+.newsholderr{width:100%; height:auto; overflow:auto; padding-top:10px;}
+.newtitle{width:100%; margin-bottom:20px; font-family:Maiandra GD; color:#000000; font-weight:bold; text-transform:uppercase}
+.newbody{width:99%; height:auto;}
+.newbody p{color:#000; font-size:100%; font-weight:normal!important; text-align:justify; font-family:arial, verdana, tahoma, sans-serif; padding-left:0px!important;}
+.newbody a{font-size:100%; font-family:arial, verdana, tahoma, sans-serif;}
+.newsbottom{margin-bottom:0px; width:98%; overflow:auto; height:auto;}
+.newsbottoml{width:100%; margin:0px auto; overflow:auto; padding-bottom:10px;}
+.newsbottoml1{float:left; width:47%; margin-right:2%; font-size:100%; font-family:Maiandra GD; background:url(../img/blog_c.html) center left no-repeat; padding-left:22px;}
+.newsbottoml2{float:left; width:45%; margin-right:2%; font-size:100%; font-family:Maiandra GD; background:url(../img/blog_p.html) center left no-repeat; padding-left:22px;}
+.newsbottomr{width:100%; height:auto; overflow:auto;}
+.newsread{width:190px; margin:0px auto; height:auto; text-align:center; border:1px double #00f; background:#000; color:#fff; cursor:pointer; font-size:100%; font-family:"Maiandra GD"; padding:10px;}
+.viewall{width:140px; height:auto; cursor:pointer; background:#fff; padding:10px; color:#000; margin:0px auto; text-align:center; font-size:100%; height:auto; font-family:Maiandra GD; border:1px dashed #000;}
+.viewall:hover{background:#333333; color:#FFFFFF;}
+
+
+
+
+
+
+.tipsadlo{width:400px; margin:0px auto; padding:10% 10% 5% 10%; height:auto; position:relative;}
+.tipsadlo-booking{height:auto; overflow:auto; border:0px solid #000; width:auto; font-family:Maiandra GD; font-size:100%; text-align:justify; background:#D6D6D6; border-bottom:1px solid #000; padding:10px; border-top-left-radius:5px; border-top-right-radius:5px;}
+.tipsadlo-booking h3{font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+.tipsadlo fieldset{border:0px solid #000; width:auto; background:#fff; padding:0px 12px 0px 12px; margin:0px auto;}
+.tipsadlo p{margin-bottom:20px;}
+.tipsadlo span{font-size:16px; font-family:Maiandra GD;}
+input[type="submit"].loginad{width:auto; border:1px double #00F; border-radius:3px; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px 10px 0px 10px; color:#fff; margin-top:13px; font-family:Maiandra GD; font-size:100%; margin-left:5px;}
+input[type="submit"].loginad:hover{width:auto; border:1px double #00F; padding:0px 10px 0px 10px; background:#2E2E2E; margin-top:13px; margin-left:5px;}
+.adedittable{width:auto; border:1px double #00F; border-radius:3px; background:#000000; height:30px; line-height:23px; cursor:pointer; text-align:center; padding:0px 10px 0px 10px; color:#fff; margin-top:13px; font-family:Maiandra GD; font-size:100%; margin-left:5px;}
+.adedittable:hover{width:auto; border:1px double #00F; padding:0px 10px 0px 10px; background:#2E2E2E; margin-top:13px; margin-left:5px;}
+
+
+#bodytop6ad{width:100%; height:auto; margin:0px auto; padding-bottom:40px; padding-top:115px; overflow:auto;}
+#bodytop6ad h3{width:98%; margin-left:2%; margin:0px auto; text-align:left; font-weight:bold; font-size:20px; font-family:Maiandra GD;}
+.bodytop6ad{width:98%; margin-left:2%; height:auto; margin:0px auto; padding-bottom:10px; margin-top:20px; overflow:auto; background:#fff;}
+.bodytop6ad fieldset{border:0px solid #000; width:auto; background:#fff; padding:12px 12px 2px 12px; overflow:auto;}
+#bodytop6ad span{font-size:16px; font-weight:bold;}
+#bodytop6ad table{font-size:16px;}
+
+
+.freead{background:#009900; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+.basicad{background:#4FA7FF; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+.premad{background:#F90; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+.expirad{background:#900; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:15px; cursor:pointer; color:#fff;}
+.tipgenad{background:#00F; width:auto; height:auto; padding:5px 15px 5px 15px; font-size:16px; font-family:Maiandra GD; font-weight:bold; border-radius:5px; float:left; margin-right:0px; cursor:pointer; color:#fff;}
+input[type="text"].adsearuser{width:25%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+input[type="text"].adsearuser:hover{width:25%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+.adtextarecon{width:95%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #333; margin-bottom:5px; border-radius:5px; margin-left:5px; height:50px; padding-top:5px;}
+.adtextarecon:hover{width:95%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; margin-bottom:5px; border-radius:5px; margin-left:5px; height:50px; padding-top:5px;}
+.adtextareblog{width:95%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #333; margin-bottom:5px; border-radius:5px; margin-left:5px; height:150px; padding-top:5px;}
+.adtextareblog:hover{width:95%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; margin-bottom:5px; border-radius:5px; margin-left:5px; height:150px; padding-top:5px;}
+input[type="text"].adcontactush{width:95%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+input[type="text"].adcontactush:hover{width:95%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+input[type="text"].adcontactush2{width:88%; padding-left:8px; margin-top:5px; border:1px solid #666; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+input[type="text"].adcontactush2:hover{width:88%; padding-left:8px; margin-top:5px; border:1px solid #00F; box-shadow:0px 1px 10px 1px #000; height:30px; line-height:30px; margin-bottom:5px; border-radius:5px; margin-left:5px;}
+
+.divdir{margin:0px auto; width:145px; height:26px; margin-top:15px;}
+.divback{background:url(../img/tips_back.png) no-repeat; width:25px; height:25px; float:left; margin-top:-25px; cursor:pointer;}
+.divcent{width:auto; height:26px; line-height:26px; text-align:center;}
+.divfor{background:url(../img/tips_forward.png) no-repeat; width:25px; height:25px; float:right; margin-top:-25px; cursor:pointer;}
+.divback2{background:url(../img/ligarrowb.png) no-repeat; width:25px; height:25px; float:left; margin-top:-25px; cursor:context-menu;}
+.divfor2{background:url(../img/ligarrowf.png) no-repeat; width:25px; height:25px; float:right; margin-top:-25px; cursor:context-menu;}
+
+
+
+
+.readmore{width:auto; padding:0px 10px 0px 10px; height:25px; line-height:25px; text-align:center; border:1px double #00f; background:#000; color:#fff; cursor:pointer; font-size:14px; font-family:"Maiandra GD"; float:left; margin-top:10px; margin-left:30px;}
+
+.viewmorep{width:100%; padding:5px 10px 5px 10px; height:auto; text-align:center; border:1px double #00f; background:#000; color:#fff; cursor:pointer; font-size:16px; font-family:"Maiandra GD"; margin-bottom:10px;}
+
+.payme2{width:100%; padding:5px; height:auto; text-align:center; border:1px double #000; background:#000; color:#fff; cursor:pointer; font-size:16px; font-family:"Maiandra GD"; font-weight:bold; float:left; margin-top:10px;}
+
+.payme4{width:90%; padding:5px 5px 5px 5px; height:auto; text-align:center; border:1px double #000; background:#000; color:#fff; cursor:pointer; font-size:16px; font-family:"Maiandra GD"; font-weight:bold;}
+
+.payme5{width:90%; padding:5px 5px 5px 5px; height:auto; text-align:center; border:1px double #000; background:blue; color:#fff; cursor:pointer; font-size:16px; font-family:"Maiandra GD"; font-weight:bold;}
+
+.payme6{width:100%; padding:5px 5px 5px 5px; height:auto; text-align:center; border:1px double #000; background:blue; color:#fff; cursor:pointer; font-size:16px; font-family:"Maiandra GD"; font-weight:bold;}
+
+.viewmoreacca{width:90%; padding:5px 10px 5px 10px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:black; cursor:pointer; margin:0px auto; margin-top:10px!important;}
+.viewmoreacca:hover{background:blue;}
+.viewmoreacca a{color:#fff; font-weight:bold;}
+
+.viewmoreacca2{width:180px; padding:5px 10px 5px 10px; height:auto; border-radius:5px; text-align:center; border:1px solid #000; background:blue; cursor:pointer; z-index:100; margin:0px auto; margin-top:10px!important;}
+.viewmoreacca2:hover{background:black;}
+.viewmoreacca2 a{color:#fff; font-size:14px!important;}
+.viewmoreacca2 a:hover{text-decoration:none!important;}
+
+.membleftnavp{width:auto; float:left; background:#00F; border:1px solid #00C; padding:0px 10px 0px 10px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:100%; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px; margin-right:0px}
+.membleftnavp:hover{width:auto; float:left; background:#fff; border:1px solid #000; padding:0px 10px 0px 10px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px;}
+
+.membleftnavsub{width:90%; background:#00F; border:1px solid #00C; padding:0px 10px 0px 10px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#FFFFFF; font-family:Maiandra GD; font-size:100%; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px; text-align:center;}
+.membleftnavsub:hover{width:90%; background:#fff; border:1px solid #000; padding:0px 10px 0px 10px; box-shadow:0px 1px 10px 1px #000; border-radius:3px; color:#000; font-family:Maiandra GD; font-size:100%; height:25px; line-height:25px; margin-bottom:5px; margin-left:10px; text-align:center;}
+
+.observeerror{color:red; margin:0px auto; font-weight:normal!important; text-align:center; padding-left:0px!important; font-family:Maiandra GD; font-size:20px!important; font-weight:bold!important;}
+
+
+#footer{height:560px; background:#040404; border-top:3px solid gold; width:100%; position:absolute; bottom:0px; color:white; overflow:auto;}
+.footer1{color:#fff; font-family:Georgia, "Times New Roman", Times, serif; width:100%; margin:0px auto; height:auto; overflow:hidden; padding-top:25px;}
+.foot1{margin:0px auto; text-align:center; height:auto; background:#040404; width:95%; color:gold;}
+.foot1 font{text-decoration:underline; font-size:150%;}
+.foot1 ul{margin-left:0px; margin-top:5px;}
+.foot1 ul li{list-style:none; margin-left:-35px; margin-bottom:1px;}
+.foot1 ul li a{font-family:Georgia, "Times New Roman", Times, serif; font-size:100%!important; color:#fff;}
+.foot1 ul li a:hover{text-decoration:underline; color:gold;}
+.foot4{margin:0px auto; height:auto; background:#040404; width:95%; color:#fff; text-align:center; font-family:Arial, Helvetica, sans-serif!important; font-size:14px;}
+.foot4 img{border:0; width:35px; height:37px; margin:5px 5px;}
+.onlinep{width:100%; margin:0px auto; height:auto; background:#040404; color:white; text-align:center;}
+.onlinep font{text-decoration:underline; color:gold; font-size:150%;}
+.onlinep img{margin-top:3px;}
+.foot5{width:100%; height:auto; text-align:center; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:100%; float:left; border-top:0px solid #FFF; background:#040404;}
+.foot5 a{text-decoration:underline; color:yellow; font-size:100%;}
+}
